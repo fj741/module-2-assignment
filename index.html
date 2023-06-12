@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Website</title>
+    <script src="https://kit.fontawesome.com/3c45431b42.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Game<span>Shop</span></a>
+        <nav>
+            <ul id="navigation">
+                <li> <a href="#home">Home</a></li>
+                <li> <a href="#membership">Membership</a></li>
+                <li> <a href="#games">Games</a></li>
+                <li> <a href="#contact">Contact</a></li>
+                <i class="fas fa-x" id="closeButton"></i>
+            </ul>
+            <i class="fas fa-bars" id="operButton"></i>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="content">
+                <h2>Great Games at affordable prices</h2>
+                <h4>Subscribe to GameShop to get exclusive deals on some of the industries best games!</h4>
+                <a href="#membership">Learn More</a>
+            </div>
+            <div class="buttons">
+                <span class="circle active" data-src="img/img_1.png"></span>
+                <span class="circle" data-src="img/img_2.png"></span>
+                <span class="circle" data-src="img/img_3.png"></span>
+                <span class="circle" data-src="img/img_4.png"></span>
+                <span class="circle" data-src="img/img_5.png"></span>
+            </div>
+            <div class="images">
+                <img src="img/img_1.png" id="image_carousel" alt="">
+            </div>
+        </section>
+        <section id="membership">
+            <h1>Membership</h1>
+            <p>Subscribe to GameShop for €19.99/month and recieve up to 30% off all games!</p>
+            <div class="container">
+                <div class="icon">
+                    <img src="img/gaming.png" alt="">
+                </div>
+                <form action="/" method="GET" id="member_form">
+                    <div>
+                        <h2>First Name</h2>
+                        <input type="text" id="first_name" name="first_name">
+                    </div>
+                    <div>
+                        <h2>Last Name</h2>
+                        <input type="text" id="last_name">
+                    </div>
+                    <div>
+                        <h2>Email</h2>
+                        <input type="email" id="email">
+                    </div>
+                    <p id="error"></p>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+        <section #games>
+            <h1>Best Selling Games</h1>
+            <button id="previous_button" class="arrows"><=</button>
+            <button id="next_button" class="arrows">=></button>
+
+            <div class="game_container" id="game_container">
+                <div class="game">
+                    <div class="game_image">
+                        <span class="game_name">The Legend of Zelda</span>
+                        <img src="gameicons/loztotk.png">
+                        <button class="cart">Add to Cart</button>
+                    </div>
+                    <div class="game_info">
+                        <span class="original_price">Was €69.99</span>              
+                        <span class="new_price">Now €59.99</span>
+                    </div>
+                </div>
+                <div class="game">
+                    <div class="game_image">
+                        <span class="game_name">The Last of Us Part I</span>
+                        <img src="gameicons/loup1.png">
+                        <button class="cart">Add to Cart</button>
+                    </div>
+                    <div class="game_info">
+                        <span class="original_price">Was €59.99</span>              
+                        <span class="new_price">Now €49.99</span>
+                    </div>
+                </div>
+                <div class="game">
+                    <div class="game_image">
+                        <span class="game_name">Resident Evil 4</span>
+                        <img src="gameicons/re4.png">
+                        <button class="cart">Add to Cart</button>
+                    </div>
+                    <div class="game_info">
+                        <span class="original_price">Was €79.99</span>              
+                        <span class="new_price">Now €69.99</span>
+                    </div>
+                </div>
+                <div class="game">
+                    <div class="game_image">
+                        <span class="game_name">Diablo 4</span>
+                        <img src="gameicons/diablo4.png">
+                        <button class="cart">Add to Cart</button>
+                    </div>
+                    <div class="game_info">
+                        <span class="original_price">Was €69.99</span>              
+                        <span class="new_price">Now €59.99</span>
+                    </div>
+                </div>
+                <div class="game">
+                    <div class="game_image">
+                        <span class="game_name">Jedi Survivor</span>
+                        <img src="gameicons/jedisurvivor.png">
+                        <button class="cart">Add to Cart</button>
+                    </div>
+                    <div class="game_info">
+                        <span class="original_price">Was €69.99</span>              
+                        <span class="new_price">Now €59.99</span>
+                    </div>
+                </div>
+                <div class="game">
+                    <div class="game_image">
+                        <span class="game_name">Hogwarts Legacy</span>
+                        <img src="gameicons/hogwartslegacy.png">
+                        <button class="cart">Add to Cart</button>
+                    </div>
+                    <div class="game_info">
+                        <span class="original_price">Was €69.99</span>              
+                        <span class="new_price">Now €59.99</span>
+                    </div>
+                </div>
+                <div class="game">
+                    <div class="game_image">
+                        <span class="game_name">The Last of Us Part I</span>
+                        <img src="gameicons/loup1.png">
+                        <button class="cart">Add to Cart</button>
+                    </div>
+                    <div class="game_info">
+                        <span class="original_price">Was €69.99</span>              
+                        <span class="new_price">Now €59.99</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="#contact">
+        <div class="container">
+            <p>&copy; Jack Farrell</p>
+            <p>Email me <a href="mailto:jackfarrell@gmail.com">Here</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

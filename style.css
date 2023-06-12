@@ -1,0 +1,251 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+/*Navigation*/
+header{
+    font-size: 20px;
+    background-color: rgb(148, 148, 148);
+    color: orange;
+    width: 100%;
+    display: flex;
+    z-index: 500;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px 30px;
+    align-items: center;
+}
+header nav ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+header .logo{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+header .logo span{
+    color: red;
+}
+header nav ul li a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgb(207, 0, 0);
+}
+header nav ul li a:hover{
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+header .fas{
+    display: none;
+}
+
+/*Responsive Navigation*/
+@media screen and (max-width: 600px) {
+    header nav .fas{
+        display: block;
+        color: white;
+        cursor: pointer;
+    }
+    header nav ul {
+        background-color: #3a3a3a;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        z-index: 500;
+        height: 100vh;
+        padding-top: 20px;
+    }
+    header nav ul li a{
+        display: block;
+        color: white;
+        padding: 10px;
+    }
+    header nav ul .fas{
+        position: absolute;
+        top: 0;
+        left: 5;
+        color: white;
+        cursor: pointer;
+    }
+
+}
+
+/*Home Section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 100vh;
+    text-align: center;
+    text-transform: uppercase;
+}
+#home .images img{
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+#home .content{
+    background-color: white;
+    border-radius: 16px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+#home .content h2{
+    z-index: 5;
+    color: rgb(240, 119, 5);
+}
+#home .content h4{
+    padding: 30px;
+}
+#home .content a{
+    padding: 15px 20px;
+    background-color: rgb(134, 0, 0);
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+}
+
+#home .buttons{
+    background-color: grey;
+    border-radius: 50px;
+    position: relative;
+    padding: 10px;
+}
+#home .buttons .circle{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background:rgb(138, 77, 77);
+    border-radius: 50%;
+    cursor: pointer;
+}
+#home .buttons .circle.active{
+    background: rgb(143, 1, 1);
+}
+
+/*Memebrship Section*/
+#membership{
+    position: relative;
+    padding: 20px 100px;
+}
+#membership h1, #membership p{
+    text-align: center;
+}
+#membership .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+#membership p{
+    margin-bottom: 40px;
+}
+#membership .icon{
+    flex: 1 1 20px;
+
+}
+#membership .container form{
+    background-color: rgb(255, 255, 108);
+}
+#membership .icon img{
+    height: 200px;
+    width: 300px;
+    
+}
+#error{
+    color: red;
+}
+#membership .container input{
+    width: 100%;
+    height: 25px;
+}
+#membership .container button{
+    background-color: rgb(147, 147, 147);
+    color: rgb(202, 81, 0);
+    width: 80%;
+    margin: 10px auto;
+    height: 25px;
+    border:none;
+    cursor: pointer;
+}    
+
+#membership .container form{
+    flex: 1 1 20px;
+    box-shadow: 0 12px 24px black;
+    padding: 20px;
+}
+
+/*Games Section*/
+#games{
+    overflow: hidden;
+    position: relative;
+    padding: 15px;
+}
+.arrows{
+    font-size: 30px;
+    top: 50%;
+}
+#previous_button{
+    left: 0;
+}
+#next_button{
+    right: 0;
+}
+.game_container{
+    padding: 0 5vw;
+    scroll-behavior: smooth;
+    display: flex;
+    overflow-x: none;
+    
+}
+.game_container::-webkit-scrollbar{
+    display: none;
+}
+.game{
+    flex: 0 0 auto;
+    width: 200px;
+    height: 400px;
+    margin-right: 40px;
+}
+.game_image{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.game_image img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.console{
+    padding: 0 10vw;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/*Footer*/
+footer{
+    background-color: grey;
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+footer .container{
+    font-size: 20px;
+    text-align: center;
+}
